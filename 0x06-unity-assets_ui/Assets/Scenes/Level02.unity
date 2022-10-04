@@ -6906,8 +6906,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0:00.00
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a398f06190de85242a0a299c2117f1e1, type: 2}
+  m_sharedMaterial: {fileID: -974793043789051917, guid: a398f06190de85242a0a299c2117f1e1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12603,8 +12603,6 @@ Transform:
   - {fileID: 1250153639}
   - {fileID: 603121254}
   - {fileID: 108212049}
-  - {fileID: 1627606802}
-  - {fileID: 543013873}
   - {fileID: 174014206}
   - {fileID: 231554888}
   - {fileID: 680730142}
@@ -12612,12 +12610,14 @@ Transform:
   - {fileID: 2016740}
   - {fileID: 1572820430}
   - {fileID: 1836901331}
-  - {fileID: 553330326}
-  - {fileID: 1720584745}
-  - {fileID: 359652766}
   - {fileID: 401598665}
-  - {fileID: 493682095}
+  - {fileID: 1720584745}
   - {fileID: 115522219}
+  - {fileID: 1627606802}
+  - {fileID: 543013873}
+  - {fileID: 553330326}
+  - {fileID: 359652766}
+  - {fileID: 493682095}
   - {fileID: 1906447705}
   - {fileID: 68196759}
   - {fileID: 1512173341}
