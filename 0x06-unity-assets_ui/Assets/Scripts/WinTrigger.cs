@@ -6,17 +6,20 @@ using TMPro;
 
 public class WinTrigger : MonoBehaviour
 {
-    public TextMeshProUGUI timerText;
-    Timer timer;
-    public GameObject player;
-    private void OnTriggerEnter(Collider other)
-    {
+    public GameObject Player;
 
+    public TextMeshProUGUI win_text;
+    public GameObject winCanvas;
+
+
+    void OnTriggerEnter(Collider other)
+    {
         if (other.tag == "Player")
-            player = GameObject.Find("Player");
-        timer = player.GetComponent<Timer>();
-        timer.enabled = false;
-        timerText.color = Color.green;
-        timerText.fontSize = 60;
+        {
+            Player.gameObject.GetComponent<Timer>().enabled = false;
+            win_text.text = "";
+            winCanvas.SetActive(true);
+            Time.timeScale = 0f;
+        }
     }
 }

@@ -5,6 +5,7 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
+    public TextMeshProUGUI FinalTime;
     public TextMeshProUGUI timerText;
     float second = 0;
     float minute = 0;
@@ -20,5 +21,9 @@ public class Timer : MonoBehaviour
         }
         timerText.text = string.Format("{0}:{1:00.00}", minute, second);
         
+    }
+        public void Win()
+    {
+        FinalTime.text = timerText.text;
     }
 }
