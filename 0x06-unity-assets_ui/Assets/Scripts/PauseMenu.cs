@@ -6,51 +6,63 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
+    public static bool Paused = false;
 
-    private bool Paused;
-    public Canvas PauseCanva;
+    public GameObject pauseMenuUI;
 
-    public void Pause()
+
+    // Update is called once per frame
+    void Update()
     {
-        Paused = true;
-        Time.timeScale = 0;
-        PauseCanva.enabled = true;
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (Paused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
+        }
+
+        void Pause()
+        {
+            pauseMenuUI.SetActive(true);
+            Time.timeScale = 0f;
+            Paused = true;
+        }
+
+        void Resume()
+        {
+            pauseMenuUI.SetActive(false);
+            Time.timeScale = 1f;
+            Paused = false;
+        }
+
+        
     }
-    public void Resume()
+    public void ResumeB()
+        {
+            pauseMenuUI.SetActive(false);
+            Time.timeScale = 1f;
+            Paused = false;
+        }
+    public void Restart(int levels)
     {
-        Paused = false;
-        Time.timeScale = 1;
-        PauseCanva.enabled = false;
-
+        
+        SceneManager.LoadScene(levels);
+        Time.timeScale = 1f;
     }
-
-
-    public void Restart()
-    {
-        Scene currentLevel = SceneManager.GetActiveScene();
-        Resume();
-        SceneManager.LoadScene(currentLevel.buildIndex);
-    }
-
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
+        Time.timeScale = 1f;
     }
 
     public void Options()
     {
         SceneManager.LoadScene(4);
+        Time.timeScale = 1f;
     }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (Paused)
-                Resume();
-            else
-                Pause();
-        }
-    }
-
 }
