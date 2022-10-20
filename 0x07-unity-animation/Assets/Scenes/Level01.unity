@@ -7746,6 +7746,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18b4f9d66bd6b8d4fb11cfe069b8ba8f, type: 3}
+--- !u!1 &410994273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8197815800494243710, guid: d801e099aac40954ab95fcc02fb92d15, type: 3}
+  m_PrefabInstance: {fileID: 2271186690036371745}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &416873489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17048,6 +17053,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebb9f93ffd9f3364e85a0f40ca6e7139, type: 3}
+--- !u!1 &903139181 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1230518296506459400, guid: 6c5f1141623883e4abb22444a8ce22a6, type: 3}
+  m_PrefabInstance: {fileID: 2405195610712699533}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &903139182 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5517533128357655537, guid: 6c5f1141623883e4abb22444a8ce22a6, type: 3}
+  m_PrefabInstance: {fileID: 2405195610712699533}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &903139183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903139181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1c5993485f0ec4fb55d1f3ce85f270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 903139182}
+  player: {fileID: 2139248345280953394}
+  cutsceneCamera: {fileID: 903139181}
+  mainCamera: {fileID: 475060446}
+  TimerCanvas: {fileID: 410994273}
 --- !u!1001 &903547070
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37175,6 +37207,10 @@ PrefabInstance:
       propertyPath: gravity
       value: -23.37
       objectReference: {fileID: 0}
+    - target: {fileID: 6790734102054535185, guid: e6506e4dc2a08e9409065524d027a792, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6506e4dc2a08e9409065524d027a792, type: 3}
 --- !u!1 &2139248345280953394 stripped
@@ -37454,6 +37490,10 @@ PrefabInstance:
     - target: {fileID: 8197815800494243710, guid: d801e099aac40954ab95fcc02fb92d15, type: 3}
       propertyPath: m_Name
       value: TimerCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197815800494243710, guid: d801e099aac40954ab95fcc02fb92d15, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8906849372181941394, guid: d801e099aac40954ab95fcc02fb92d15, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
